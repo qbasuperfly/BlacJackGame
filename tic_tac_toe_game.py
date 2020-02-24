@@ -77,9 +77,9 @@ def player_choice(board):
 
 
 def replay():
-    choice = input("Play again? Enter Yes or No")
+    choice = input("Play again? Enter yes or no ")
     
-    return choice == 'Yes'
+    return choice.lower() == 'yes'
 
 
 print('Welcome to Tic Tac Toe!')
@@ -94,7 +94,7 @@ while True:
     
     play_game = input('Ready to play? yes or no? ')
     
-    if play_game == 'yes':
+    if play_game.lower() == 'yes':
         game_on = True
     else:
         game_on = False
